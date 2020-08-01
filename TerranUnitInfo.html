@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>StarCraft ToyProject</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/commons.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/terran-thema.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<!-- <style></style> -->
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<nav class="util-wrap">
+				<div class="menu-left">
+					<span class="domain">
+						<a href="https://starcraft.com/ko-kr/" target="-blank">StarCraftREMASTERED_remake</a>
+					</span>
+					<span class="movie">
+						<a href="movie.html">movie</a>
+					</span>
+				</div>
+				<div class="menu-right">
+					<span class="home">
+						<a href="index.html">home</a>
+					</span>
+					<span class="u-pinfo">
+						<a href="ProtossUnitInfo.html">protoss unit info</a>
+					</span>
+					<span class="u-tinfo">
+						<a href="TerranUnitInfo.html">terran unit info</a>
+					</span>
+					<span class="u-zinfo">
+						<a href="ZergUnitInfo.html">zerg unit info</a>
+					</span>
+					<span class="login">
+						<a href="#">login</a>
+					</span>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="connect-list">
+			<a name="top"></a><!-- 가시성만 감춰둠 -->
+			<div class="part-wrap">
+				<div class="part-left">
+					<div class="inner-left1">
+						<div class="part-infantry">
+							보병
+							<ul>
+								<li><a href="#scv">SCV</a></li>
+								<li><a href="#marine">Marine</a></li>
+								<li><a href="#firebat">Firebat</a></li>
+								<li><a href="#medic">Medic</a></li>
+								<li><a href="#ghost">Ghost</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="inner-right1">
+						<div class="part-vehicle">
+							차량
+							<ul>
+								<li><a href="#vulture">Vulture</a></li>
+								<li><a href="#siegeTank">Siege Tank</a></li>
+								<li><a href="#goliath">Goliath</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="part-right">
+					<div class="inner-left2">
+						<div class="part-spaceship">
+							우주선
+							<ul>
+								<li><a href="#wraith">Wraith</a></li>
+								<li><a href="#dropship">Dropship</a></li>
+								<li><a href="#scienceVessel">Science Vessel</a></li>
+								<li><a href="#valkyrie">Valkyrie</a></li>
+								<li><a href="#battlecruiser">Battlecruiser</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="inner-right2">
+						<div class="part-suicide">
+							자폭
+							<ul>
+								<li><a href="#spiderMine">Spider Mine</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<div class="content-wrap">
+			<div class="content-info">
+				<div class="content-terran">
+					<div class="inner-wrap">
+						<div class="content-left">
+							<img src="images/main.jpg" alt="" width="300" /><br />
+						</div>
+						<div class="content-right">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/xlSbPlKQ_dc"
+								frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+							</iframe><br />
+						</div>
+					</div>
+					<img src="images/terran/terran.jpg" alt="" width="1100" />
+					<h1>TerranUnit</h1>
+				</div>
+			</div>
+		</div>
+		<div class="infantry-wrap">
+			<!-- 보병 -->
+			<h2>▼보병 정보</h2>
+			<div class="units-wrap">
+				<div class="unit">
+					<div class="uInner-wrap">
+						<div class="uInner-left">
+							<div class="unit-info">
+								<a name="scv"></a>
+								<a href="#top">▲top</a>
+								<h3>
+									Space Construction Vehicle<br />
+									SCV
+								</h3>
+								<p>
+									특징 : 우주 건설차량<br />
+									무장 : 융합절단기<br /><br />
+								</p>
+							</div>
+						</div>
+						<div class="uInner-right">
+							<div class="unit-model-wrap">
+								<div class="unit-model">
+									<img src="images/terran/infantry/scv_model.png" alt="" width="200" />
+								</div>
+							</div>
+							<div class="unit-state">
+								<img src="images/terran/infantry/scv2d.jpg" alt="" width="200" title="체력 : 60/60" />
+								<img src="images/terran/infantry/scvEquipment.jpg" alt="" width="200" />
+								<img src="images/terran/infantry/scv.gif" alt="" width="200" /><br /><br />
+							</div>
+						</div>
+					</div>
+
+					<div class="uinit-details">
+						테란 보병 장갑 방어력 : 0 + 0(업그레이드)[업그레이드시 방어력 +1_최대 3까지 증가]<br />
+						융합 절단기 공격력 : 5<br />
+						SCV는 무기 업그레이드를 해도 공격력이 증가되지 않음<br />
+						결론 융합절단기 객체는 공격은 가능하지만 무기 객체가 아님<br /><br />
+					</div>
+
+					<div class="unit-method">
+						SCV의 기능<br /><br />
+						<img src="images/common_method/move.jpg" alt="" width="100" title="이동" />
+						<img src="images/common_method/stop.jpg" alt="" width="100" title="정지" />
+						<img src="images/common_method/attack.jpg" alt="" width="100" title="공격" />
+						<br />
+						<img src="images/common_method/patrol.jpg" alt="" width="100" title="순찰" />
+						<img src="images/common_method/hold.jpg" alt="" width="100" title="위치고정" />
+						<br />
+						<img src="images/terran/method/terran_repair.jpg" alt="" width="100"
+							title="수리(지상/공중 기계유닛 수리가능)" />
+						<img src="images/common_method/gather.jpg" alt="" width="100" title="채집(자원을 채집하지 않은 경우)" />
+						<img src="images/common_method/transit.jpg" alt="" width="100" title="운반(자원을 채집한 경우)" /><br />
+
+						<img src="images/terran/method/buildingbuild.jpg" alt="" width="100" title="건물건설" />
+						<img src="images/terran/method/advancedBuildingbuild.jpg" alt="" width="100"
+							title="진보된 건물 건설" /><br />
+					</div>
+				</div>
+
+				<div class="unit">
+					<div class="uInner-wrap">
+						<div class="uInner-left">
+							<div class="unit-info">
+								<a name="marine"></a>
+								<a href="#top">▲top</a>
+								<h3>
+									Marine<br />
+									마린
+								</h3>
+								<p>
+									특징 : 기갑 특공 보병<br />
+									무장 : 8mm C-14<br />
+									가우스 관통 소총<br /><br />
+								</p>
+							</div>
+						</div>
+						<div class="uInner-right">
+							<div class="unit-model-wrap">
+								<div class="unit-model">
+									<img src="images/terran/infantry/marine_model.png" alt="" width="200" />
+								</div>
+							</div>
+							<div class="unit-state">
+								<img src="images/terran/infantry/marine2d.jpg" alt="" width="200" title="체력 : 40/40" />
+								<img src="images/terran/infantry/marineEquipment.jpg" alt="" width="200" />
+								<img src="images/terran/infantry/marine.gif" alt="" width="200" /><br /><br />
+							</div>
+						</div>
+					</div>
+
+					<div class="uinit-details">
+						시야: 7<br />
+						공격범위: 4 + 0(업그레이드)[업그레이드시 공격범위 +1_최대 1까지 증가]<br />
+						테란 보병 장갑 방어력 : 0 + 0(업그레이드)[업그레이드시 방어력 +1_최대 3까지 증가]<br />
+						가우스 소총 공격력 : 5 + 0(업그레이드)[업그레이드시 공격력 +1_최대 3까지 증가]<br /><br />
+					</div>
+
+					<div class="unit-method">
+						마린의 기능<br /><br />
+						<img src="images/common_method/move.jpg" alt="" width="100" title="이동" />
+						<img src="images/common_method/stop.jpg" alt="" width="100" title="정지" />
+						<img src="images/common_method/attack.jpg" alt="" width="100" title="공격" />
+						<br />
+						<img src="images/common_method/patrol.jpg" alt="" width="100" title="순찰" />
+						<img src="images/common_method/hold.jpg" alt="" width="100" title="위치고정" />
+						<br />
+						<img src="images/terran/method/terran_stimPack.jpg" alt="" width="100"
+							title="자극제 사용(체력-10_ 체력이 10인경우 사용불가)" /><br />
+					</div>
+				</div>
+
+				<div class="unit">
+					<div class="uInner-wrap">
+						<div class="uInner-left">
+							<div class="unit-info">
+								<a name="firebat"></a>
+								<a href="#top">▲top</a>
+								<h3>
+									Firebat<br />
+									파이어벳
+								</h3>
+								<p>
+									특징 : 기갑 돌격대<br />
+									무장 : CMC-660 중장갑 전투복<br />
+									플라즈마 지옥 화염 방사기<br /><br />
+								</p>
+							</div>
+						</div>
+						<div class="uInner-right">
+							<div class="unit-model-wrap">
+								<div class="unit-model">
+									<img src="images/terran/infantry/firebat_model.png" alt="" width="200" />
+								</div>
+							</div>
+							<div class="unit-state">
+								<img src="images/terran/infantry/firebat2d.jpg" alt="" width="200" title="체력 : 50/50" />
+								<img src="images/terran/infantry/firebatEquipment.jpg" alt="" width="200" />
+								<img src="images/terran/infantry/firebat.gif" alt="" width="200" /><br /><br />
+							</div>
+						</div>
+					</div>
+
+					<div class="uinit-details">
+						시야: 7<br />
+						공격범위: 2<br />
+						테란 보병 장갑 방어력 : 1 + 0(업그레이드)[업그레이드시 방어력 +2_최대 3까지 증가]<br />
+						화염방사기 공격력 : (8 * 2) = 16 + 0(업그레이드)<br />
+						업그레이드시 파이어벳은 공격력이 2씩증가<br /><br />
+					</div>
+
+					<div class="unit-method">
+						파이어벳의 기능<br /><br />
+						<img src="images/common_method/move.jpg" alt="" width="100" title="이동" />
+						<img src="images/common_method/stop.jpg" alt="" width="100" title="정지" />
+						<img src="images/common_method/attack.jpg" alt="" width="100" title="공격" />
+						<br />
+						<img src="images/common_method/patrol.jpg" alt="" width="100" title="순찰" />
+						<img src="images/common_method/hold.jpg" alt="" width="100" title="위치고정" /><br />
+						<img src="images/terran/method/terran_stimPack.jpg" alt="" width="100"
+							title="자극제 사용(체력-10_ 체력이 10인경우 사용불가)" /><br />
+					</div>
+				</div>
+
+				<div class="unit">
+					<div class="uInner-wrap">
+						<div class="uInner-left">
+							<div class="unit-info">
+								<a name="medic"></a>
+								<a href="#top">▲top</a>
+								<h3>
+									Medic<br />
+									메딕
+								</h3>
+								<p>
+									특징 : 야전 의무 지원<br />
+									무장 : 없음<br /><br />
+								</p>
+							</div>
+						</div>
+						<div class="uInner-right">
+							<div class="unit-model-wrap">
+								<div class="unit-model">
+									<img src="images/terran/infantry/medic_model.png" alt="" width="200" />
+								</div>
+							</div>
+							<div class="unit-state">
+								<img src="images/terran/infantry/medic2d.jpg" alt="" width="200"
+									title="체력 : 60/60 사이오닉 에너지 : 50/200(에너지 초기값은 50/연구후 50증가)" />
+								<img src="images/terran/infantry/medicEquipment.jpg" alt="" width="200" />
+								<img src="images/terran/infantry/medic.gif" alt="" width="200" /><br /><br />
+							</div>
+						</div>
+					</div>
+
+					<div class="uinit-details">
+						테란 보병 장갑 방어력 : 1 + 0(업그레이드)[업그레이드시 방어력 +1_최대 3까지 증가]<br /><br />
+					</div>
+
+					<div class="unit-method">
+						메딕의 기능<br /><br />
+						<img src="images/common_method/move.jpg" alt="" width="100" title="이동" />
+						<img src="images/common_method/stop.jpg" alt="" width="100" title="정지" />
+						<br />
+						<img src="images/common_method/patrol.jpg" alt="" width="100" title="순찰" />
+						<img src="images/common_method/hold.jpg" alt="" width="100" title="위치고정" /><br />
+
+						<img src="images/terran/method/terran_heal.jpg" alt="" width="100" title="치료(에너지-1_대상 체력+1)" />
+						<img src="images/terran/method/terran_restoration.jpg" alt="" width="100"
+							title="회생(에너지-50_대상상태회복)" />
+						<img src="images/terran/method/terran_opticalFlare.jpg" alt="" width="100" title="광학 조명탄(에너지-75_대상시야=1+탐지기인 경우는 눈멈으로
+						수정)" /><br />
+						<img src="../../../imges/starcraft/메서드 모음/테란 고유 메서드/에너지를 소모하는 기술 메서드/치료.jpg" alt=""
+							width="100" />
+						<img src="../../../imges/starcraft/메서드 모음/테란 고유 메서드/에너지를 소모하는 기술 메서드/회생.jpg" alt=""
+							width="100" />
+						<img src="../../../imges/starcraft/메서드 모음/테란 고유 메서드/에너지를 소모하는 기술 메서드/광학 조명탄.jpg" alt=""
+							width="100" /><br />
+					</div>
+				</div>
+
+				<div class="unit">
+					<div class="uInner-wrap">
+						<div class="uInner-left">
+							<div class="unit-info">
+								<a name="ghost"></a>
+								<a href="#top">▲top</a>
+								<h3>
+									Ghost<br />
+									고스트
+								</h3>
+								<p>
+									특징 : 첩보원<br />
+									무장 : 특수 작전복 25mm<br />
+									C-10 산탄 소총<br />
+									개인용 은폐 장치(특수 장비)<br />
+								</p>
+							</div>
+						</div>
+						<div class="uInner-right">
+							<div class="unit-model-wrap">
+								<div class="unit-model">
+									<img src="images/terran/infantry/ghost_model.png" alt="" width="200" />
+								</div>
+							</div>
+							<div class="unit-state">
+								<img src="images/terran/infantry/ghost2d.jpg" alt="" width="200"
+									title="체력 : 45/45 사이오닉 에너지 : 50/200(에너지 초기값은 50/연구후 50증가)" />
+								<img src="images/terran/infantry/ghostEquipment.jpg" alt="" width="200" />
+								<img src="images/terran/infantry/ghost.gif" alt="" width="200" /><br /><br />
+							</div>
+						</div>
+					</div>
+
+					<div class="uinit-details">
+						테란 보병 장갑 방어력 : 0 + 0(업그레이드)[업그레이드시 방어력 +1_최대 3까지 증가]<br />
+						C-10 산탄 소총 공격력 : 10 + 0(업그레이드)[업그레이드시 공격력 +1_최대 3까지 증가] <br /><br />
+					</div>
+
+					<div class="unit-method">
+						고스트의 기능<br /><br />
+						<img src="images/common_method/move.jpg" alt="" width="100" title="이동" />
+						<img src="images/common_method/stop.jpg" alt="" width="100" title="정지" />
+						<img src="images/common_method/attack.jpg" alt="" width="100" title="공격" />
+						<br />
+						<img src="images/common_method/patrol.jpg" alt="" width="100" title="순찰" />
+						<img src="images/common_method/hold.jpg" alt="" width="100" title="위치고정" /><br />
+						<img src="images/terran/method/terran_clock.jpg" alt="" width="100"
+							title="은폐(에너지-25 + 초당에너지 -1)" />
+						<img src="images/terran/method/terran_deClock.jpg" alt="" width="100" title="[은폐중인 경우]은폐취소" />
+						<img src="images/terran/method/terran_lockdown.jpg" alt="" width="100" title="잠금" />
+						<img src="images/terran/method/terran_nuclearStrike.jpg" alt="" width="100"
+							title="핵공격(핵격납고의 핵수량-1)" /><br /><br />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="vehicle-wrap">
+			<!-- 차량 -->
+			<h2>▼차량 정보</h2>
+			<div class="units-wrap">
+				<div class="unit">
+					<div class="uInner-wrap">
+						<div class="uInner-left">
+							<div class="unit-info">
+								<a name="vulture"></a>
+								<a href="#top">▲top</a>
+								<h3>
+									Vulture<br />
+									벌쳐
+								</h3>
+								<p>
+									특징 : '벌쳐' 공중 부양 차량<br />
+									무장 : 대인 파편 유탄 스파이더 마인(Spider Mine)[선택사항]<br /><br />
+								</p>
+							</div>
+						</div>
+						<div class="uInner-right">
+							<div class="unit-model-wrap">
+								<div class="unit-model">
+									<img src="images/terran/vehicle/vulture_model.png" alt="" width="200" />
+								</div>
+							</div>
+							<div class="unit-state">
+								<img src="images/terran/vehicle/vulture2d.jpg" alt="" width="200" title="체력 : 80/80" />
+								<img src="images/terran/vehicle/vultureEquipment(spiderMine_upgrade_before).jpg" alt=""
+									width="200" />
+								<img src="images/terran/vehicle/vulture.gif" alt="" width="200" /><br /><br />
+							</div>
+						</div>
+					</div>
+
+					<div class="uinit-details">
+						(스파이더 마인 연구 전)테란 차량 장갑 방어력 : 0 + 0(업그레이드)[업그레이드시 방어력 +1_최대 3희까지 증가]<br />
+						대인 파편 유탄 공격력 : 20 + 0(업그레이드)[업그레이드시 공격력 +2_최대 3회까지 증가]<br /><br />
+					</div>
+
+					<div class="unit-method">
+						벌쳐의 기능<br /><br />
+						<img src="images/common_method/move.jpg" alt="" width="100" title="이동" />
+						<img src="images/common_method/stop.jpg" alt="" width="100" title="정지" />
+						<img src="images/common_method/attack.jpg" alt="" width="100" title="공격" />
+						<br />
+						<img src="images/common_method/patrol.jpg" alt="" width="100" title="순찰" />
+						<img src="images/common_method/hold.jpg" alt="" width="100" title="위치고정" /><br />
+						<img src="images/terran/method/terran_desSpiderMine.jpg" alt="" width="100"
+							title="스파이더 마인 연구후 사용가능" /><br />
+					</div>
+				</div>
+
+				<div class="unit">
+					<div class="uInner-wrap">
+						<div class="uInner-left">
+							<div class="unit-info">
+								<h3>
+									Vulture<br />
+									벌쳐<br />
+									(스파이더 마인 연구 후)
+								</h3>
+								<p>
+									특징 : '벌쳐' 공중 부양 차량<br />
+									무장 : 대인 파편 유탄 스파이더 마인(Spider Mine)[선택사항]<br /><br />
+								</p>
+							</div>
+						</div>
+						<div class="uInner-right">
+							<div class="unit-model-wrap">
+								<div class="unit-model">
+									<img src="images/terran/vehicle/vulture_model.png" alt="" width="200" />
+								</div>
+							</div>
+							<div class="unit-state">
+								<img src="images/terran/vehicle/vulture2d.jpg" alt="" width="200" title="체력 : 80/80" />
+								<img src="images/terran/vehicle/vultureEquipment(spiderMine_upgrade_after).jpg" alt=""
+									width="200" />
+								<img src="images/terran/vehicle/vulture.gif" alt="" width="200" /><br /><br />
+							</div>
+						</div>
+					</div>
+
+					<div class="uinit-details">
+						(스파이더 마인 연구 후)테란 차량 장갑 방어력 : 0 + 0(업그레이드)[업그레이드시 방어력 +1_최대 3까지 증가]<br />
+						대인 파편 유탄 공격력 : 20 + 0(업그레이드)[업그레이드시 공격력 +2_최대 3회까지 증가]<br />
+						스파이더 마인 공격력 : 125[스파이더 마인은 연구를 해도 공격력이 증가되지 않음] <br /><br />
+					</div>
+
+					<div class="unit-method">
+						벌쳐의 기능<br /><br />
+						<img src="images/common_method/move.jpg" alt="" width="100" title="이동" />
+						<img src="images/common_method/stop.jpg" alt="" width="100" title="정지" />
+						<img src="images/common_method/attack.jpg" alt="" width="100" title="공격" />
+						<br />
+						<img src="images/common_method/patrol.jpg" alt="" width="100" title="순찰" />
+						<img src="images/common_method/hold.jpg" alt="" width="100" title="위치고정" /><br />
+						<img src="images/terran/method/terran_spiderMine.jpg" alt="" width="100"
+							title="스파이더 마인 사용(스파이더 마인 수량 -1)" /><br />
+					</div>
+				</div>
+
+				<div class="unit">
+					<div class="uInner-wrap">
+						<div class="uInner-left">
+							<div class="unit-info">
+								<a name="siegeTank"></a>
+								<a href="#top">▲top</a>
+								<h3>
+									Siege Tank(Arclite)<br />
+									시즈 탱크(탱크 모드)
+								</h3>
+								<p>
+									특징 : 이동식 대포<br />
+									무장 : 쌍 80mm 대포<br /><br />
+								</p>
+							</div>
+						</div>
+						<div class="uInner-right">
+							<div class="unit-model-wrap">
+								<div class="unit-model">
+									<img src="images/terran/vehicle/siegetank_s_model.png" alt="" width="200" />
+								</div>
+							</div>
+							<div class="unit-state">
+								<img src="images/terran/vehicle/arclite_Siege Tank2d.jpg" alt="" width="200"
+									title="체력 : 150/150" />
+								<img src="images/terran/vehicle/arclite_Siege TankEquipment.jpg" alt="" width="200" />
+								<img src="images/terran/vehicle/siegeTank.gif" alt="" width="200" /><br /><br />
+							</div>
+						</div>
+					</div>
+
+					<div class="uinit-details">
+						테란 차량 장갑 방어력 : 1 + 0(업그레이드)[업그레이드시 방어력 +1_최대 3회까지 증가]<br />
+						아크라이트 포 공격력 : (15 * 2) = 30 + 0(업그레이드)<br />
+						업그레이드시 시즈 탱크(탱크 모드)는 공격력이 3씩증가<br /><br />
+					</div>
+
+					<div class="unit-method">
+						시즈 탱크(탱크 모드)의 기능<br /><br />
+						<img src="images/common_method/move.jpg" alt="" width="100" title="이동" />
+						<img src="images/common_method/stop.jpg" alt="" width="100" title="정지" />
+						<img src="images/common_method/attack.jpg" alt="" width="100" title="공격" />
+						<br />
+						<img src="images/common_method/patrol.jpg" alt="" width="100" title="순찰" />
+						<img src="images/common_method/hold.jpg" alt="" width="100" title="위치고정" /><br />
+						<img src="images/terran/method/terran_siegeMode.jpg" alt="" width="100"
+							title="공성모드(Siege Mode)" /><br />
+					</div>
+				</div>
+
+				<div class="unit">
+					<div class="uInner-wrap">
+						<div class="uInner-left">
+							<div class="unit-info">
+								<h3>
+									Siege Tank(Siege Mode)<br />
+									시즈 탱크(공성모드)
+								</h3>
+								<p>
+									특징 : 이동식 대포<br />
+									무장 : 120mm 충격포(공성모드 업그레이드)<br /><br />
+								</p>
+							</div>
+						</div>
+						<div class="uInner-right">
+							<div class="unit-model-wrap">
+								<div class="unit-model">
+									<img src="images/terran/vehicle/siegetank_a_model.png" alt="" width="200" />
+								</div>
+							</div>
+							<div class="unit-state">
+								<img src="images/terran/vehicle/siegeMode_SiegeTank2d.jpg" alt="" width="200"
+									title="체력 : 150/150" />
+								<img src="images/terran/vehicle/siegeMode_SiegeTankEquipment.jpg" alt="" width="200" />
+								<img src="images/terran/vehicle/siegeTank.gif" alt="" width="200" /><br /><br />
+							</div>
+						</div>
+					</div>
+
+					<div class="uinit-details">
+						테란 차량 장갑 방어력 : 1 + 0(업그레이드)[업그레이드시 방어력 +1_최대 3까지 증가]<br />
+						아크라이트 충격포 공격력 : 70 + 0(업그레이드)<br />
+						업그레이드시 시즈 탱크(공성모드)는 공격력이 5씩증가<br /><br />
+					</div>
+
+					<div class="unit-method">
+						시즈 탱크(공성모드)의 기능<br /><br />
+						<img src="images/common_method/stop.jpg" alt="" width="100" title="정지" />
+						<img src="images/common_method/attack.jpg" alt="" width="100" title="공격" />
+						<br />
+						<img src="images/terran/method/terran_arcliteMode.jpg" alt="" width="100"
+							title="전차모드(Arclite Mode)" /><br />
+					</div>
+				</div>
+
+				<div class="unit">
+					<div class="uInner-wrap">
+						<div class="uInner-left">
+							<div class="unit-info">
+								<a name="goliath"></a>
+								<a href="#top">▲top</a>
+								<h3>
+									Goliath<br />
+									골리앗
+								</h3>
+								<p>
+									특징 : 전위 돌격형 장갑체<br />
+									무장 : 2연장 30mm 자동포<br />
+									지옥불 대공 미사일<br /><br />
+								</p>
+							</div>
+						</div>
+						<div class="uInner-right">
+							<div class="unit-model-wrap">
+								<div class="unit-model">
+									<img src="images/terran/vehicle/goliath_model.png" alt="" width="200" />
+								</div>
+							</div>
+							<div class="unit-state">
+								<img src="images/terran/vehicle/goliath2d.jpg" alt="" width="200"
+									title="체력 : 125/125" />
+								<img src="images/terran/vehicle/goliathEquipment.jpg" alt="" width="200" />
+								<img src="images/terran/vehicle/goliath.gif" alt="" width="200" /><br /><br />
+							</div>
+						</div>
+					</div>
+
+					<div class="uinit-details">
+						테란 차량 장갑 방어력 : 1 + 0(업그레이드)[업그레이드시 방어력 +1_최대 3까지 증가]<br />
+						2연장 자동포 공격력 : (6*2) = 12 + 0(업그레이드)[업그레이드시 방어력 +1_최대 3회까지 증가]<br />
+						지옥불 미사일 공격력 : (10 * 2) = 20 + 0(업그레이드)[업그레이드시 공격력 +4_최대 3회까지 증가] <br /><br />
+					</div>
+
+					<div class="unit-method">
+						골리앗의 기능<br /><br />
+						<img src="images/common_method/move.jpg" alt="" width="100" title="이동" />
+						<img src="images/common_method/stop.jpg" alt="" width="100" title="정지" />
+						<img src="images/common_method/attack.jpg" alt="" width="100" title="공격" />
+						<br />
+						<img src="images/common_method/patrol.jpg" alt="" width="100" title="순찰" />
+						<img src="images/common_method/hold.jpg" alt="" width="100" title="위치고정" /><br />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="spaceship-wrap">
+			<!-- 우주선 -->
+			<h2>▼우주선 정보</h2>
+			<div class="units-wrap">
+				<div class="unit">
+					<div class="uInner-wrap">
+						<div class="uInner-left">
+							<div class="unit-info">
+								<a name="wraith"></a>
+								<a href="#top">▲top</a>
+								<h3>
+									Wraith<br />
+									레이스
+								</h3>
+								<p>
+									특징 : 우주 우세 전투기<br />
+									무장 : 25mm 연발 레이져(CF/A-17G만 탑재 가능)<br />
+									제미니 공대공 미사일<br /><br />
+								</p>
+							</div>
+						</div>
+						<div class="uInner-right">
+							<div class="unit-model-wrap">
+								<div class="unit-model">
+									<img src="images/terran/spaceship/wraith_model.png" alt="" width="200" />
+								</div>
+							</div>
+							<div class="unit-state">
+								<img src="images/terran/spaceship/wraith2d.jpg" alt="" width="200"
+									title="체력 : 120/120 사이오닉 에너지 : 50/200(에너지 초기값은 50/연구후 50증가)" />
+								<img src="images/terran/spaceship/wraithEquipment.jpg" alt="" width="200" />
+								<img src="images/terran/spaceship/wraith.gif" alt="" width="200" /><br /><br />
+							</div>
+						</div>
+					</div>
+
+					<div class="uinit-details">
+						테란 함선 장갑 방어력 : 0 + 0(업그레이드)[업그레이드시 방어력 +1_최대 3까지 증가]<br />
+						파열 레이저 공격력 : 8 + 0(업그레이드)[업그레이드시 공격력 +1_최대 3회까지 증가]<br />
+						공대공 미사일 공격력 : (10 * 2) = 20 + 0(업그레이드)[업그레이드시 공격력 +2_최대 3회까지 증가] <br /><br />
+					</div>
+
+					<div class="unit-method">
+						레이스의 기능<br /><br />
+						<img src="images/common_method/move.jpg" alt="" width="100" title="이동" />
+						<img src="images/common_method/stop.jpg" alt="" width="100" title="정지" />
+						<img src="images/common_method/attack.jpg" alt="" width="100" title="공격" />
+						<br />
+						<img src="images/common_method/patrol.jpg" alt="" width="100" title="순찰" />
+						<img src="images/common_method/hold.jpg" alt="" width="100" title="위치고정" /><br />
+						<img src="images/terran/method/terran_clock.jpg" alt="" width="100"
+							title="은폐(에너지-25 + 초당에너지 -1)" />
+						<img src="images/terran/method/terran_deClock.jpg" alt="" width="100"
+							title="[은폐중인 경우]은폐취소" /><br />
+					</div>
+				</div>
+
+				<div class="unit">
+					<div class="uInner-wrap">
+						<div class="uInner-left">
+							<div class="unit-info">
+								<a name="dropship"></a>
+								<a href="#top">▲top</a>
+								<h3>
+									Dropship<br />
+									드롭쉽
+								</h3>
+								<p>
+									특징 : 중장갑 수송선<br />
+									무장 : 없음<br /><br />
+								</p>
+							</div>
+						</div>
+						<div class="uInner-right">
+							<div class="unit-model-wrap">
+								<div class="unit-model">
+									<img src="images/terran/spaceship/dropship_model.png" alt="" width="200" />
+								</div>
+							</div>
+							<div class="unit-state">
+								<img src="images/terran/spaceship/dropship2d.jpg" alt="" width="200"
+									title="체력 : 150/150" />
+								<img src="images/terran/spaceship/dropshipEquipment.jpg" alt="" width="200" />
+								<img src="images/terran/spaceship/dropship.gif" alt="" width="200" /><br /><br />
+							</div>
+						</div>
+					</div>
+
+					<div class="uinit-details">
+						테란 함선 장갑 방어력 : 1 + 0(업그레이드)[업그레이드시 방어력 +1_최대 3까지 증가] <br /><br />
+					</div>
+
+					<div class="unit-method">
+						드롭십의 기능<br /><br />
+						<img src="images/common_method/move.jpg" alt="" width="100" title="이동" />
+						<img src="images/common_method/stop.jpg" alt="" width="100" title="정지" />
+						<br />
+						<img src="images/common_method/patrol.jpg" alt="" width="100" title="순찰" />
+						<img src="images/common_method/hold.jpg" alt="" width="100" title="위치고정" /><br />
+						<img src="images/common_method/load.jpg" alt="" width="100" title="싣기" />
+						<img src="images/common_method/unloadingUnits.jpg" alt="" width="100" title="내리기[탑승자가 (0명이면 내리기 비활성화/중간이면 싣기/내리기 활성화/ 탑승 정원이 가득차면 싣기 비활성화] 적재량[배열로 처리] 전체탑승공간은
+						8칸 보병은탑승공간을 1씩 사용, 벌쳐와 골리앗은 2칸씩, 탱크는 4칸을 사용" /><br />
+					</div>
+				</div>
+
+				<div class="unit">
+					<div class="uInner-wrap">
+						<div class="uInner-left">
+							<div class="unit-info">
+								<a name="scienceVessel"></a>
+								<a href="#top">▲top</a>
+								<h3>
+									Explorer Science Vessel<br />
+									사이언스 베슬
+								</h3>
+								<p>
+									특징 : 이동식 과학 연구소<br />
+									무장 : 없음<br /><br />
+								</p>
+							</div>
+						</div>
+						<div class="uInner-right">
+							<div class="unit-model-wrap">
+								<div class="unit-model">
+									<img src="images/terran/spaceship/scienceVessel_model.png" alt="" width="200" />
+								</div>
+							</div>
+							<div class="unit-state">
+								<img src="images/terran/spaceship/scienceVessel2d.jpg" alt="" width="200"
+									title="체력 : 200/200 사이오닉 에너지 : 50/200(에너지 초기값은 50/연구후 50증가)" />
+								<img src="images/terran/spaceship/scienceVesselEquipment.jpg" alt="" width="200" />
+								<img src="images/terran/spaceship/scienceVessel.gif" alt="" width="200" /><br /><br />
+							</div>
+						</div>
+					</div>
+
+					<div class="uinit-details">
+						테란 함선 장갑 방어력 : 1 + 0(업그레이드)[업그레이드시 방어력 +1_최대 3까지 증가]<br /><br />
+					</div>
+
+					<div class="unit-method">
+						사이언스 베슬의 기능<br /><br />
+						<img src="images/common_method/move.jpg" alt="" width="100" title="이동" />
+						<img src="images/common_method/stop.jpg" alt="" width="100" title="정지" />
+						<br />
+						<img src="images/common_method/patrol.jpg" alt="" width="100" title="순찰" />
+						<img src="images/common_method/hold.jpg" alt="" width="100" title="위치고정" /><br />
+						객체생성과 동시에 탐지기작동<br /><br />
+						<img src="images/terran/method/terran_defensiveMatrix.jpg" alt="" width="100"
+							title="방어 매트릭스 활성화(에너지-100)" />
+						<img src="images/terran/method/terran_EMPShockwave.jpg" alt="" width="100"
+							title="EMP충격파 활성화(에너지-100)" />
+						<img src="images/terran/method/terran_irradiate.jpg" alt="" width="100"
+							title="방사능(에너지-75)" /><br />
+					</div>
+				</div>
+
+				<div class="unit">
+					<div class="uInner-wrap">
+						<div class="uInner-left">
+							<div class="unit-info">
+								<a name="valkyrie"></a>
+								<a href="#top">▲top</a>
+								<h3>
+									Valkyrie<br />
+									발키리
+								</h3>
+								<p>
+									특징 : 미사일 구축함<br />
+									무장 : 연발 광륜 로켓<br /><br />
+								</p>
+							</div>
+						</div>
+						<div class="uInner-right">
+							<div class="unit-model-wrap">
+								<div class="unit-model">
+									<img src="images/terran/spaceship/valkyrie_model.png" alt="" width="200" />
+								</div>
+							</div>
+							<div class="unit-state">
+								<img src="images/terran/spaceship/valkyrie2d.jpg" alt="" width="200"
+									title="체력 : 200/200" />
+								<img src="images/terran/spaceship/valkyrieEquipment.jpg" alt="" width="200" />
+								<img src="images/terran/spaceship/valkyrie.gif" alt="" width="200" /><br /><br />
+							</div>
+						</div>
+					</div>
+
+					<div class="uinit-details">
+						테란 함선 장갑 방어력 : 2 + 0(업그레이드)[업그레이드시 방어력 +1_최대 3까지 증가]<br />
+						연발 광륜 로켓 공격력 : (8 * 6) = 48 + 0(업그레이드)[업그레이드시 공격력 +1_최대 3회까지 증가] <br /><br />
+					</div>
+
+					<div class="unit-method">
+						발키리의 기능<br /><br />
+						<img src="images/common_method/move.jpg" alt="" width="100" title="이동" />
+						<img src="images/common_method/stop.jpg" alt="" width="100" title="정지" />
+						<img src="images/common_method/attack.jpg" alt="" width="100" title="공격" />
+						<br />
+						<img src="images/common_method/patrol.jpg" alt="" width="100" title="순찰" />
+						<img src="images/common_method/hold.jpg" alt="" width="100" title="위치고정" /><br />
+					</div>
+				</div>
+
+				<div class="unit">
+					<div class="uInner-wrap">
+						<div class="uInner-left">
+							<div class="unit-info">
+								<a name="battlecruiser"></a>
+								<a href="#top">▲top</a>
+								<h3>
+									Behemoth Battlecruiser<br />
+									배틀크루저
+								</h3>
+								<p>
+									특징 : 사령선<br />
+									무장 : 레이저 포대<br />
+									야마토포(Yamato Cannon_연구후 사용가능)<br /><br />
+								</p>
+							</div>
+						</div>
+						<div class="uInner-right">
+							<div class="unit-model-wrap">
+								<div class="unit-model">
+									<img src="images/terran/spaceship/battlecruiser_model.png" alt="" width="200" />
+								</div>
+							</div>
+							<div class="unit-state">
+								<img src="images/terran/spaceship/battlecruiser2d.jpg" alt="" width="200"
+									title="체력 : 500/500 사이오닉 에너지 : 50/200(에너지 초기값은 50/연구후 50증가)" />
+								<img src="images/terran/spaceship/battlecruiserEquipment.jpg" alt="" width="200" />
+								<img src="images/terran/spaceship/battlecruiser.gif" alt="" width="200" /><br /><br />
+							</div>
+						</div>
+					</div>
+
+					<div class="uinit-details">
+						테란 함선 장갑 방어력 : 3 + 0(업그레이드)[업그레이드시 방어력 +1_최대 3까지 증가]<br />
+						공대지 레이저 포대 공격력 : 25 + 0(업그레이드)[업그레이드시 공격력 +3_최대 3회까지 증가]<br />
+						공대공 레이저 포대 공격력 : 25 + 0(업그레이드)[업그레이드시 공격력 +3_최대 3회까지 증가] <br /><br />
+					</div>
+
+					<div class="unit-method">
+						배틀크루저의 기능<br /><br />
+						<img src="images/common_method/move.jpg" alt="" width="100" title="이동" />
+						<img src="images/common_method/stop.jpg" alt="" width="100" title="정지" />
+						<img src="images/common_method/attack.jpg" alt="" width="100" title="공격" />
+						<br />
+						<img src="images/common_method/patrol.jpg" alt="" width="100" title="순찰" />
+						<img src="images/common_method/hold.jpg" alt="" width="100" title="위치고정" /><br />
+						<img src="images/terran/method/terran_yamatoCannon.jpg" alt="" width="100"
+							title="야마토 포(에너지-150_대상유닛 체력-259)" /><br />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="suicide-wrap">
+			<h2>▼자폭 정보</h2>
+			<div class="units-wrap">
+				<div class="unit">
+					<div class="uInner-wrap">
+						<div class="uInner-left">
+							<div class="unit-info">
+								<a name="spiderMine"></a>
+								<a href="#top">▲top</a>
+								<h3>
+									Spider Mine<br />
+									스파이더 마인
+								</h3>
+								<p>
+									특징 : 지뢰<br />
+									무장 : 자폭<br /><br />
+								</p>
+							</div>
+						</div>
+						<div class="uInner-right">
+							<div class="unit-state">
+								<img src="images/terran/suicide/spiderMine2d.jpg" alt="" width="200"
+									title="체력 : 20/20" />
+								<img src="images/terran/suicide/spiderMineEquipment.jpg" alt="" width="200" />
+								<img src="images/terran/suicide/spiderMine.gif" alt="" width="200" /><br /><br />
+							</div>
+						</div>
+					</div>
+
+					<div class="uinit-details">
+						스파이더 마인 공격력 : 125<br /><br />
+					</div>
+
+					<div class="unit-method">
+						스파이더 마인 기능<br /><br />
+						적이 공격범위 내부에 있으면 추적하여 자폭/ 범위를 벗어나면 이동한 위치에서 다시 매설됨<br />
+						<br /><br /><br /><br />
+						<br />
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="foot-wrap">
+			<div class="foot-license">
+				서밀러스가 2차 창작을 했으나 권한은 아래의 회사가 가지고 있음을 알립니다.<br /><br />
+				&copy 2020 BLIZZARD ENTERTAINMENT, INC.<br />
+				모든 권리는 <a href="https://www.blizzard.com/ko-kr/" auto="_blank">BLIZZARD ENTERTAINMENT</a>에 있습니다.<br />
+				여기서 언급된 다른 모든 상표는 각 소유권자들의 자산입니다.<br />
+				블리자드 엔터테인먼트 유한 회사
+			</div>
+			<div class="foot-copInfo">
+				주소: 06164 서울시 강남구 테헤란로 521 파르나스타워 15층<br />
+				대표 번호: 1644-0727 | 팩스 번호: (02)544-3038 | 이메일: websupport@blizzard.co.kr<br />
+				사업자 등록 번호: 211-87-49910 | 통신 판매업 신고 번호: 강남-6017호 | 사업자정보확인<br />
+				대표이사: 자렛 알렌 브랙, 전동진 | 개인정보 보호책임자: 전동진 대표이사<br />
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
